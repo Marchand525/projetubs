@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page avec Musique</title>
+</head>
+<body>
+
+  <h1>Page musique !</h1>
+  <button onclick="JouerMusique()">Play</button>
+
+  <audio id="Song" loop>
+    <source src=C:\Users\atelier2\Desktop\Dossier.html/Song.mp3 type="audio/mpeg">
+    AUDIO
+  </audio>
+
+  <script>
+    function jouerMusique() {
+      const audio = document.getElementById("Song");
+      audio.play().catch(function(error){
+        console.error("erreur de lecture", error);
+        alert("lecture bloquee");});
+    }
+  </script>
+
+</body>
+</html>

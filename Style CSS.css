@@ -1,0 +1,496 @@
+body,
+html {
+    /*Style de base pour html et body*/
+    height: 100%;
+    font-family: Arial;
+    display: flex;
+    /*Sert à rendre la disposition de l'écriture flexible si ajout de colonne */
+    flex-direction: column;
+    /*Sert à diviser la page par colonne */
+    margin:0;/*supprimer les marges*/
+    padding:0;/*supprimer les espacements*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*MISE EN PAGE*/
+/*ajout de colonne*/
+.main {
+    display: flex;
+    flex: 1;
+    width: 70%;
+    /*Ajoute des marges de 10% de chaque côté */
+    margin: 20px auto;
+}
+
+.content {
+    width: 90%;
+    padding: 20px auto;
+}
+
+.sectionsleft {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+
+/*Configuration du backround pour .bg-img*/
+.bg-img {
+    background-image: url("ensibs.jpg");
+    min-height: 380px;
+    /* hauteur minimal pour image de fond*/
+    background-position: center;
+    background-size: cover;
+    /*L'image de fond couvre tout l'espace disponible*/
+}
+
+.container1 {
+    position: absolute;
+    right: 20px;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+/*Style pour les inputs*/
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 22px;
+    background: whitesmoke;
+}
+
+p,
+h3 {
+    color: dimgray;
+    font-size: 18px;
+}
+
+/*Mettre le button style ici permets de standardiser ce style*/
+.button-style {
+    background-color: green;
+    /*couleur de fond*/
+    border: none;
+    /*pas de bordure*/
+    color: white;
+    /*couleur du texte*/
+    padding: 15px 32px;
+    /*espacement interne*/
+    text-align: center;
+    text-decoration: none;
+    /*type d'affichage*/
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* applique le texte en gras */
+
+
+
+a {
+    color: green;
+    font-size: 18px
+}
+
+.section1 {
+    background-color: whitesmoke;
+    color: dimgray;
+    padding: 20px;
+    font-size: 18px;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+}
+
+
+
+.btn {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+
+span {
+    color: dimgray;
+}
+
+.containerceremony {
+    width: 70%;
+    margin: auto;
+    /*centre le contenu horizontalement*/
+}
+
+.button-ceremony {
+    background-color: green;
+    /*couleur de fond du boutton*/
+    border: 5px solid Black;
+    /*bordure*/
+    color: white;
+    /*couleur du texte*/
+    padding: 15px 40px;
+    /*espacement interne*/
+    text-align: center;
+    /*alignement du texte*/
+    font-size: 18px;
+    /*taille de la police*/
+    margin: 10px 20px;
+    /*marges externe entre chaque bouton*/
+    border-radius: 10px;
+    /*10:coins arrondis*/
+    font-weight: bold;
+    /*style de la police*/
+    box-shadow: 0 10px 15px green;
+    /* 0:effet,Ombre*/
+    font-family: 'Times New Roman';
+    /*police*/
+}
+
+.container_informations {
+    width: 80%;
+    margin: 2px auto;
+    /*centre le continu*/
+    padding: 30px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*bordures adjacentes des cellules*/
+}
+
+th {
+    text-align: left;
+}
+
+/*table */
+caption {
+    caption-side: top;
+    /*légende au-dessus du tableau*/
+    font-size: 18px;
+    margin-bottom: 10px;
+    /* espace entre la légende et le tableau*/
+    font-weight: bold;
+    text-align: center;
+    /* centrer la légende*/
+    color: green;
+    /*couleur*/
+}
+
+/*élément avec id "myfooter"*/
+#myfooter {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+/* pied de page avec bouton*/
+#myfooterJS {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    /*transformer le texte en majuscule*/
+    letter-spacing: 2px;
+}
+
+#myfooterJS:hover {
+    /*style lorsque l'élément "myfooter" est survolé */
+    color: green;
+}
+
+#button-myfooter {
+    display: block;
+    /* permet de mettre le block au milieu de la page avec les margins*/
+    /*afficher en tant que blocpour occuper toute la longueur*/
+    margin: 20px auto;
+    border: black;
+    cursor: pointer;
+    background-color: lightblue;
+    /* couleur de fond du bouton*/
+    color: black;
+    /*couleur du texte*/
+    border: 5px solid black;
+    /*bordure*/
+    padding: 15px 40px;
+    /* espacement intérieur*/
+    text-align: center;
+    /*Alignement du texte */
+    font-size: 22px;
+    /*taille de la police*/
+    font-weight: bold;
+    /* poids de la police*/
+    font-family: 'Times New Roman';
+    /*Typographie*/
+}
+
+#button-myfooter:hover {
+    background-color: green
+}
+
+.containerMedia {
+    width: 100%;
+    margin: auto;
+    /*centrer le contenu*/
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    /*Espacement égal entre les videos*/
+    align-items: center;
+    margin-top: 20px
+}
+
+.video {
+    flex: 1;
+    margin: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+}
+
+.containerleftright {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 5px auto;
+    /*Centre le contenu horizontalement*/
+}
+
+.left,
+.right {
+    width: 60%;
+    padding: 5px;
+}
+
+header {
+    font-size: 32px;
+}
+
+footer {
+    font-size: 16px;
+}
+
+.container2{
+    flex: 1;
+    /*Attention*/
+    display: grid;
+    /* si display= flex alors section flexible (horizontalement OU verticalement) SINON, Si display=grid alors section divisée en grille (Verticalement ET Horizontalemenr*/
+    width: 100%;
+    margin: 0;
+}
+
+nav,
+article {
+    padding: 20px;
+}
+
+nav {
+    background-color: whitesmoke;
+    flex: 1;
+    font-size: 18px;
+}
+
+article {
+    background-color: white;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    /*supprimer les puces ou numerospar defaut(ordonnee ou non)*/
+    padding: 0;
+}
+
+nav ul li {
+    /*Style des liens dans les listes non ordonnées*/
+    flex: 1;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    /*la largeur et la hauteur incluent les bordures et les espacements internes*/
+}
+
+nav ul li a:hover {
+    background-color: #004d00;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    /*élément en ligne*/
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    margin: 5px 0;
+    background-color: #004d00;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.btn:hover {
+
+    background-color: #003300;
+
+}
+
+@media (min-width:600px) {
+    /* règle de média appliquée lorsque la largeur de l'écran est d'au moins 600px*/
+
+    .container3{
+        grid-template-columns: 20% 80%;
+        /*deux colonnes une de 20 et l'autre de 80% */
+        grid-template-rows: none;
+        /* aucune ligne*/
+    }
+
+    nav {
+        order: 1;
+        /*Placé en 1er dans l'ordre de la grille*/
+    }
+
+    article {
+        order: 2;
+    }
+}
+
+
+
+.header, .footer{
+    background-color: #2a9df4;
+    text-align:center;
+    padding:20px;
+    color:white;
+}
+
+.container4{
+    display:flex;
+    flex:2p;
+    margin:20px;
+    border: radius 8px;
+    background-color:white;
+    
+}
+
+.header1, .footer1{
+    background-color: rgb(18,182,236);
+    color: white;
+    text-align:center;
+    padding:20px;
+}
+
+.menu1, .main1, .right1 {
+padding:20px;
+}
+
+.menu{
+    background-color:white;
+    flex:1;
+    font-size:15px;
+}
+
+.menu a {
+    display: block;
+    /*élément en block*/
+    color: white;
+    padding: 10x ;
+    margin-top: 10px;
+    background-color:rgb(18,182,236);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    width:100%;
+}
+
+.main a :hover{
+    background-color:#1c7dcf;
+}
+
+.main1{
+    width:50%;
+    padding:0 20px;
+}
+
+.right1{width:25%;
+background-color: white;
+border-left:1px}
+
+
+form{
+    background-color: white;
+    padding: 20px;/*marge en les lignes de texte*/
+    max-width:600px; /* largeur max du formulaire */
+    margin : auto;
+}
+
+label {
+    display: block;/*Définir l'élément comme un block*/
+    margin-bottom:8px; /*espace de 8 pixels en bas de l'élément*/
+    font-weight: bold;
+    color:black;
+}
+select, textarea{
+width: calc(100%-20px);/*largeur de 100% moins pixels*/
+    padding: 20px;
+border : 1 solid black;
+font-size:16px;
+}
+
+/*style boutons radio et case a  cocher*/
+input[type="radio"],
+input[type="checkbox"]
+{margin-right: 10px; /*marge de droite des boutons radios et des caase a cocher*/
+}
+/* styles aux étiquettes  après les boutons radio et les cases à cocher */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline-block;/*texte aligné avec le bouton*/
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* Styles pour le bouton de soumission */
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+}
+
