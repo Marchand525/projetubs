@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Verdana';
+            color: #333333;
+            background-color: whitesmoke;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .header, .footer {
+            background-color: #2a9df4;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex: 2;
+            margin: 20px;
+            border-radius: 8px;
+            background-color: white;
+        }
+        .menu, .main, .right{
+            padding: 20px;
+        }
+        .menu{
+            width: 25%;
+            background-color: #d0e7ff;
+            border-right: 1px solid #b0c4de;
+        }
+        .menu a{
+            background-color: #2a9df4;
+            padding: 10px;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .main a:hover{
+            background-color: #1c7dcf;
+        }
+        .main{
+            width: 50%;
+            padding: 0 20px;
+        }
+        .right{
+            width: 25%;
+            background-color: #d0e7ff;
+            border-left: 1px solid #b0c4de;
+        }
+        h2{
+            color: #2a9df4;
+            margin-bottom: 10px;
+        }
+        p{
+            line-height: 1.6;/*hauteur entre h2 et p*/
+        }
+    @media (max-width: 600px){
+            .container{
+                flex-direction: column;
+            }
+            .menu, .main, .right{
+                width: 100%;
+                padding: 15px 0;
+                border-radius: 0;
+            }
+            .menu{
+                border-right: none;
+                border-bottom: 1px solid #b0c4de;
+            }
+            .right{
+                border-right: none;
+                border-top: 1px solid #b0c4de;
+            }
+        }
+    </style>
+    <div class="header">
+        <h1>Université Bretagne Sud </h1>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <a href="">Faculté Droit Eco-Gestion et IA</a>
+            <a href="">Faculté des lettres, Langues, Sciences Humaines</a>
+            <a href="">Faculté Sciences & Sciences de l'Ingénieur</a>
+            <a href="">ENSIBS - Ecole d'Ingénieur</a>
+            <a href="">IUT Vannes</a>
+            <a href="">Prise de contact</a>
+        </div>
+        <div class="main">
+            <h2>Présentation</h2>
+            <p>Université entreprenante et engagée, l'ubs développe 4 grandes priorités : Mer & littéraux, Industriel,
+                Cyber, Intelligence L’Université Bretagne Sud (UBS), l’École Nationale d’Ingénieurs de Brest (ENIB),
+                l’Université de Bretagne Occidentale (UBO) ont fait le choix de s’engager ensemble dans une démarche de
+                partenariat stratégique. Elles ont signé le 20 décembre 2019 une nouvelle Alliance Universitaire de
+                Bretagne (AUB). Celle-ci a pour ambition l’élaboration d’une stratégie de recherche commune et la mise
+                en œuvre d’initiatives visant à accroître la dynamique et le rayonnement des trois établissements.</p>
+        </div>
+        <div class="right">
+            <h2>Approche pédagogique</h2>
+            <p>Nos objectifs pédagogiques à l'Université Bretagne Sud sont de développer les connaissances académiques
+                de nos étudiants, mais aussi leurs intelligences sociale, citoyenne, pratique et technologique.
+                L'UBS s'attache à une exigence intellectuelle, sanctionnée par des diplômes reconnus par l’État ; une
+                pratique de terrain,
+                par le projet et l’entrepreneuriat ; et le développement personnel (travailler en équipe, acquérir un
+                comportement inclusif,
+                apprendre à interagir dans différentes cultures, identifier ses émotions, etc.), qui passe par de la
+                médiation et les travaux
+                de groupe. Selon le palmarès publié par l'Etudiant, l’Université se classe 16ème parmi les 80
+                universités françaises pour la
+                réussite de la Licence en 3 ans.</p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy;copyright GI3
+    </div>
+</body>
+</html>

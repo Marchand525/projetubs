@@ -1,0 +1,47 @@
+<!--page ceremonie-->
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Style Css.css">
+<script src="script_ceremonie.js"></script>
+
+<body>
+    <a href="file:///C:/Users/atelier2/Desktop/Dossier.html/index.html"><img src="LogoGI.jpg" width=250px height=180px
+            alt="Logo de la formation GI"></a>
+    <div class="containerinformations">
+        <!--page plus d'infos : ajouter un cadre en ligne,-->
+        <h2>Plus d'informations</h2>
+        <!--iframe sert à ajouter une page web dans une page web-->
+        <iframe src="file:///C:/Users/atelier2/Desktop/Dossier.html/index.html" height="300px" width="100%"
+            id="Iframe_ENSIBS"> </iframe>
+        <h3> Découvrir plus d'infos sur notre site:
+            <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations/diplome-d-ingenieur-DI/sciences-technologies-sante-STS/diplome-d-ingenieur-genie-industriel-4-0-en-apprentissage-KWKK6ZQQ.html"
+                id="Iframe_ENSIBS_a"> ensibs.fr </a>
+        </h3>
+        <!--modifier le contenu et le style par JS -->
+        <h2>Nous contacter</h2>
+        <h3 id="MyfooterJS2"> Retrouver nous sur notre site de Lorient</h3>
+        <script>
+            function myFunction() {
+                document.getElementById("MyfooterJVS2").style.fontsize = "35px";
+                document.getElementById("MyfooterJVS2").style.color = "black";
+                document.getElementById("MyfooterJVS2").style.backgroundColor = "#2980b";
+                document.getElementById("MyfooterJVS2").innerHTML = "Adresse : 17 BD Flandres Dunkerque1940, 56100 LORIENT";
+            }
+        </script>
+        <button type="button" onclick="myFunction()" id="button-myfooter">Retrouvez nous !</button>
+        <!--Affichage de la date et de l'heure par JS-->
+        <h2>Dernière consultation</h2>
+        <button type="button" id="button-myfooter-information"
+            onclick="document.getElementById('consultation').innerHTML = /* innerHTML permet de modifier l'element selectionné*/
+            new Date().toLocaleString('fr-FR',{weekday:'long',year:'numeric', month:'long', day:'numeric', hour:'2-digit',minute:'2-digit',second:'2-digit'})">
+            cliquer ici
+        </button>
+        <!--toLocaleString permet d'afficher la date sous forme de chaine de caractère-->
+        <p id="consultation"></p>
+
+
+    </div>
+
+</body>
+
+</html>

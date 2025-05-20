@@ -1,0 +1,56 @@
+<!--page ceremonie-->
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Style Css.css">
+<script src="script_ceremonie.js"></script>
+
+<body>
+
+    <div class="containerceremony">
+        <!--lien qui permet de rediriger vers le 1er SITE en cliquant sur l'image-->
+        <a href="file:///C:/Users/atelier2/Desktop/Dossier.html/index.html"><img src="LogoGI.jpg" width=250px
+                height=180px alt="Logo de la formation GI"></a>
+
+        <h1 style="text-align:center;"> L'ENSIBS célèbre ses diplômés</h1>
+        <p>La cérémonie de remise des diplômes est un événement majeur dans la vie de l’école d’ingénieur,
+            cette cérémonie est l’occasion de célébrer à la fois la réussite des élèves ingénieurs et la fin de leurs
+            études.
+            Organisée depuis de nombreuses années, cette cérémonie est devenue un incontournable</p>
+        <script>
+            function promotion(année) {
+                var image;
+                if (année == 2023) {
+                    image = "promotion 2023.jpg"
+                }
+                else if (année == 2022) {
+                    image = "promotion 2022.jpg"
+                }
+                else if (année == 2021) {
+                    image = "promotion 2021.jpg"
+                }
+                else if (année == 2024) {
+                    image = "promotion 2024.jpg"
+                }
+                document.getElementById('monImage').src = image;
+            }
+
+
+
+        </script>
+
+        <img id="monImage" src="cérémonie.jpg" width="1050" height="600">
+
+        <p>
+            <button class="button-ceremony" type="button" onclick="promotion(2024)">promotion 2024</button>
+            <button class="button-ceremony" type="button" onclick="promotion(2023)">promotion 2023</button>
+            <button class="button-ceremony" type="button" onclick="promotion(2022)">promotion 2022</button>
+            <button class="button-ceremony" type="button" onclick="promotion(2021)">promotion 2021</button>
+        </p>
+
+
+
+
+    </div>
+</body>
+
+</html>
